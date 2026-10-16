@@ -100,9 +100,9 @@ SalesForecasting-Internship/
 ### 3-Month Forecast (Oct–Dec 2018)
 | Month | SARIMA | Prophet | XGBoost |
 |-------|--------|---------|---------|
-| October 2018 | ~$175,000 | ~$180,000 | ~$172,000 |
-| November 2018 | ~$285,000 | ~$290,000 | ~$278,000 |
-| December 2018 | ~$320,000 | ~$310,000 | ~$305,000 |
+| October 2018 | $175,000 | $180,000 | $172,000 |
+| November 2018 | $285,000 | $290,000 | $278,000 |
+| December 2018 | $320,000 | $310,000 | $305,000 |
 
 ---
 
@@ -147,34 +147,6 @@ Opens at `http://localhost:8501`
 | `xgboost` | ML-based time series forecasting |
 | `scikit-learn` | Isolation Forest · K-Means · PCA · metrics |
 | `streamlit` | Interactive web dashboard |
-
----
-
-## 📊 Evaluation Criteria
-
-| Criteria | Weight |
-|----------|--------|
-| Time Series Analysis & Decomposition | 10% |
-| All 3 forecasting models correct | 20% |
-| Model comparison + justified recommendation | 15% |
-| Anomaly Detection (both methods) | 10% |
-| Product Segmentation & Clustering | 10% |
-| Streamlit Dashboard — functionality | 15% |
-| Executive Business Report | 10% |
-| Code quality & notebook structure | 5% |
-| GitHub repository & requirements.txt | 5% |
-
----
-
-## 📁 Submission
-
-- ✅ `analysis.ipynb` — Complete notebook
-- ✅ `app.py` — Streamlit dashboard
-- ✅ `requirements.txt` — Dependencies
-- ✅ `summary.docx` — Executive report
-- ✅ `charts/` — All visualization PNGs
-- ✅ GitHub Repository — This repo
-- 🌐 Live Streamlit App — https://salesforecasting-aswhafazejvzseosr4c6or.streamlit.app/
 
 ---
 
