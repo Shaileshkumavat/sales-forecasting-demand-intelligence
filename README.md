@@ -4,6 +4,8 @@ A complete sales forecasting and demand intelligence project built on 4 years of
 
 Built during the **XYlofy AI** internship (Weeks 3 & 4).
 
+🌐 **Live Dashboard:** [Open the app](https://salesforecasting-aswhafazejvzseosr4c6or.streamlit.app/)
+
 ![Python](https://img.shields.io/badge/Python-3.x-blue) ![Prophet](https://img.shields.io/badge/Prophet-Forecasting-lightgrey) ![XGBoost](https://img.shields.io/badge/XGBoost-ML-orange) ![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red)
 
 ![Prophet Forecast](charts/prophet_forecast.png)
@@ -128,8 +130,16 @@ The models were trained on 45 months (Jan 2015 - Sep 2018) and tested on the las
 - Only **2 weeks** (2015-03-16 and 2017-10-02, both sales spikes) were flagged by **both** methods, making them the highest-confidence anomalies
 
 ### Product segmentation
-- 17 product sub-categories grouped into 4 demand clusters using volume, growth, volatility, and average order value
-- PCA captures **85.5%** of the variance in 2 dimensions
+17 product sub-categories were grouped into 4 demand segments with K-Means, using total sales, YoY growth, volatility, and average order value. PCA captures **85.5%** of the variance in 2 dimensions.
+
+![Product Demand Segments](charts/product_clusters.png)
+
+| Segment | Products | Avg YoY growth | Suggested stocking strategy |
+|---------|----------|----------------|-----------------------------|
+| **High Volume Core Products** | Phones, Chairs, Storage, Tables, Binders, Accessories | +56% | Protect availability: keep healthy safety stock and replenish on a regular cycle |
+| **Low Volume, Steady Growth** | Bookcases, Appliances, Furnishings, Paper, Supplies, Art, Envelopes, Labels, Fasteners | +55% | Keep lean inventory, order in small batches, review quarterly |
+| **Fast-Growing High-Value** | Copiers | +286% | Increase stock above last year, review monthly because demand is volatile |
+| **Declining High-Ticket Demand** | Machines | -59% | Gradually reduce inventory, clear stock with promotions |
 
 ---
 
@@ -137,6 +147,7 @@ The models were trained on 45 months (Jan 2015 - Sep 2018) and tested on the las
 
 - The test window is only **3 months**, so the differences between the three models are small and should be read with caution
 - Only 45 months of training data are available, which limits how much seasonality the models can learn
+- Two segments (Copiers and Machines) contain a single product each, so they behave more like outliers than groups
 - Anomaly "possible causes" in the dashboard are hints for investigation, not confirmed reasons
 
 ---
@@ -184,7 +195,5 @@ Opens at `http://localhost:8501`
 | `streamlit` | Interactive web dashboard |
 
 ---
-
-Try it live: https://salesforecasting-aswhafazejvzseosr4c6or.streamlit.app/
 
 *Built during the XYlofy AI Internship (Weeks 3 & 4)*
