@@ -44,7 +44,7 @@ sales-forecasting-demand-intelligence/
 ├── analysis.ipynb          ← Jupyter notebook (Tasks 1-6)
 ├── app.py                  ← Streamlit interactive dashboard (4 pages)
 ├── requirements.txt        ← Python dependencies
-├── summary.pdfx            ← 2-page executive business report (CFO / supply chain)
+├── summary.pdf            ← 2-page executive business report (CFO / supply chain)
 ├── train.csv               ← Superstore Sales dataset
 │
 └── charts/                 ← Saved chart images (.png)
@@ -74,7 +74,7 @@ sales-forecasting-demand-intelligence/
 | Task 5 | Anomaly detection with Isolation Forest and rolling Z-Score |
 | Task 6 | Product demand segmentation with K-Means and PCA |
 | Task 7 | Interactive Streamlit dashboard (`app.py`) |
-| Task 8 | Executive business report (`summary.pdfx`) |
+| Task 8 | Executive business report (`summary.pdf`) |
 
 ---
 
